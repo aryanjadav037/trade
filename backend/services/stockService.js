@@ -15,7 +15,7 @@ const getStockData = async (symbol) => {
     const response = await axios.get(
         `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${ALPHA_VANTAGE_API_KEY}`
     );
-    console.log("response data===>",response.data);
+    // console.log("response data===>",response.data);
     const stockData = response.data["Global Quote"];
     if (!stockData) {
         throw new Error("Stock data not found");
