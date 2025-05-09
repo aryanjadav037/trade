@@ -1,15 +1,15 @@
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { cn } from "../lib/utils"
-import { Button } from "../components/ui/button"
+import { Button } from "./ui/button"
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "../components/ui/card"
-import { Input } from "../components/ui/input"
-import { Label } from "../components/ui/label"
+} from "./ui/card"
+import { Input } from "./ui/input"
+import { Label } from "./ui/label"
 
 export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutRef<"div">) {
   const [formData, setFormData] = useState({
